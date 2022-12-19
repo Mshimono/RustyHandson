@@ -1,14 +1,12 @@
 fn main() {
-    println!("Hello, world!");
-
     println!("1~100までの数字でFizzBuzzする");
-    // example1();
-    //example2();
-    example3();
+    // answer1();
+    //answer2();
+    answer3();
 }
 
 #[allow(dead_code)]
-fn example1() {
+fn answer1() {
     let mut count = 0;
 
     while count <= 100 {
@@ -26,7 +24,7 @@ fn example1() {
 }
 
 #[allow(dead_code)]
-fn example2() {
+fn answer2() {
     for count in 1..=100 {
         if count % 15 == 0 {
             println!("{count} FizzBuzz");
@@ -41,7 +39,7 @@ fn example2() {
 }
 
 #[allow(dead_code)]
-fn example3() {
+fn answer3() {
     for count in 1..=100 {
         match count {
             x if x % 15 == 0 => println!("{x} FizzBuzz"),
